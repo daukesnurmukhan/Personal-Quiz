@@ -12,6 +12,7 @@
 		A81B98FD22F3575F00141A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81B98FB22F3575F00141A08 /* Main.storyboard */; };
 		A81B98FF22F3576000141A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81B98FE22F3576000141A08 /* Assets.xcassets */; };
 		A81B990222F3576000141A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81B990022F3576000141A08 /* LaunchScreen.storyboard */; };
+		A81B990A22F361D800141A08 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B990922F361D800141A08 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A81B98FE22F3576000141A08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A81B990122F3576000141A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A81B990322F3576000141A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81B990922F361D800141A08 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		A81B98F622F3575F00141A08 /* Personal Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				A81B98F722F3575F00141A08 /* AppDelegate.swift */,
-				A81B98F922F3575F00141A08 /* ViewController.swift */,
-				A81B98FB22F3575F00141A08 /* Main.storyboard */,
-				A81B98FE22F3576000141A08 /* Assets.xcassets */,
-				A81B990022F3576000141A08 /* LaunchScreen.storyboard */,
-				A81B990322F3576000141A08 /* Info.plist */,
+				A81B990C22F3620400141A08 /* Model */,
+				A81B990D22F3622400141A08 /* View */,
+				A81B990B22F361F800141A08 /* Controller */,
+				A81B990E22F3623400141A08 /* Supporting Files */,
+				A81B990F22F3628600141A08 /* Resources */,
 			);
 			path = "Personal Quiz";
+			sourceTree = "<group>";
+		};
+		A81B990B22F361F800141A08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A81B98F922F3575F00141A08 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A81B990C22F3620400141A08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A81B990922F361D800141A08 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A81B990D22F3622400141A08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A81B98FB22F3575F00141A08 /* Main.storyboard */,
+				A81B990022F3576000141A08 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A81B990E22F3623400141A08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A81B98F722F3575F00141A08 /* AppDelegate.swift */,
+				A81B990322F3576000141A08 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A81B990F22F3628600141A08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A81B98FE22F3576000141A08 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81B990A22F361D800141A08 /* Question.swift in Sources */,
 				A81B98FA22F3575F00141A08 /* ViewController.swift in Sources */,
 				A81B98F822F3575F00141A08 /* AppDelegate.swift in Sources */,
 			);
@@ -283,7 +327,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Personal Quiz/Info.plist";
+				DEVELOPMENT_TEAM = GBTTU32HS2;
+				INFOPLIST_FILE = "$(SRCROOT)/Personal Quiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +345,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Personal Quiz/Info.plist";
+				DEVELOPMENT_TEAM = GBTTU32HS2;
+				INFOPLIST_FILE = "$(SRCROOT)/Personal Quiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
