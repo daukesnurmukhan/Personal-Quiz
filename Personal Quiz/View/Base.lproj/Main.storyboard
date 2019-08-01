@@ -223,12 +223,6 @@
                             <constraint firstItem="8eh-RE-Pmb" firstAttribute="centerY" secondItem="UKE-sm-2fS" secondAttribute="centerY" constant="20" id="v8I-GR-iZq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a0U-aW-0IV"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="5VC-Vr-zUV"/>
-                                <exclude reference="N80-6N-Iai"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="CdP-zE-IF3">
                         <barButtonItem key="rightBarButtonItem" title="3 =&gt;" id="nDa-ID-EPD">
