@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A81B98F822F3575F00141A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B98F722F3575F00141A08 /* AppDelegate.swift */; };
-		A81B98FA22F3575F00141A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B98F922F3575F00141A08 /* ViewController.swift */; };
+		A81B98FA22F3575F00141A08 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B98F922F3575F00141A08 /* IntroductionViewController.swift */; };
 		A81B98FD22F3575F00141A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81B98FB22F3575F00141A08 /* Main.storyboard */; };
 		A81B98FF22F3576000141A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81B98FE22F3576000141A08 /* Assets.xcassets */; };
 		A81B990222F3576000141A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81B990022F3576000141A08 /* LaunchScreen.storyboard */; };
@@ -16,12 +16,14 @@
 		A81B991122F3639300141A08 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B991022F3639300141A08 /* ResponseType.swift */; };
 		A81B991322F3648C00141A08 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B991222F3648C00141A08 /* Answer.swift */; };
 		A81B991522F3652900141A08 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B991422F3652900141A08 /* AnimalType.swift */; };
+		A822E93522F89BCA003BCA78 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822E93422F89BCA003BCA78 /* QuestionViewController.swift */; };
+		A822E93722F89C2C003BCA78 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822E93622F89C2C003BCA78 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A81B98F422F3575F00141A08 /* Personal Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81B98F722F3575F00141A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A81B98F922F3575F00141A08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A81B98F922F3575F00141A08 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		A81B98FC22F3575F00141A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A81B98FE22F3576000141A08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A81B990122F3576000141A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		A81B991022F3639300141A08 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		A81B991222F3648C00141A08 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		A81B991422F3652900141A08 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		A822E93422F89BCA003BCA78 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		A822E93622F89C2C003BCA78 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +78,9 @@
 		A81B990B22F361F800141A08 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A81B98F922F3575F00141A08 /* ViewController.swift */,
+				A81B98F922F3575F00141A08 /* IntroductionViewController.swift */,
+				A822E93422F89BCA003BCA78 /* QuestionViewController.swift */,
+				A822E93622F89C2C003BCA78 /* ResultsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,11 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81B990A22F361D800141A08 /* Question.swift in Sources */,
-				A81B98FA22F3575F00141A08 /* ViewController.swift in Sources */,
+				A81B98FA22F3575F00141A08 /* IntroductionViewController.swift in Sources */,
+				A822E93522F89BCA003BCA78 /* QuestionViewController.swift in Sources */,
 				A81B991322F3648C00141A08 /* Answer.swift in Sources */,
 				A81B991122F3639300141A08 /* ResponseType.swift in Sources */,
 				A81B98F822F3575F00141A08 /* AppDelegate.swift in Sources */,
 				A81B991522F3652900141A08 /* AnimalType.swift in Sources */,
+				A822E93722F89C2C003BCA78 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
